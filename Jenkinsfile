@@ -9,7 +9,7 @@ stage('build') {
     
         println "build is running"
         
-        sh " /opt/maven/bin/mvn clean deploy -DskipTests "
+        sh " /opt/maven/bin/mvn clean deploy -DskipTests -DaltDeploymentRepository=artifactory::https://rajkm.jfrog.io/ "
     
 }
 }
