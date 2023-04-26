@@ -33,6 +33,10 @@
         <!-- Build an executable JAR -->
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
+        
+        
+        
+        
         <version>3.3.0</version>
         <configuration>
           <archive>
@@ -70,3 +74,70 @@
     </plugins>
   </build>
 </project>
+
+
+
+<servers>
+    <server>
+      <username>krkumar301411@gmail.com</username>
+      <password>cmVmdGtuOjAxOjE3MTQwNjcwNzE6VjlsMG9WbUZUYXNYejN6dDg4S2JHdHJlZDNE</password>
+      <id>central</id>
+    </server>
+    <server>
+      <username>krkumar301411@gmail.com</username>
+      <password>cmVmdGtuOjAxOjE3MTQwNjcwNzE6VjlsMG9WbUZUYXNYejN6dDg4S2JHdHJlZDNE</password>
+      <id>snapshots</id>
+    </server>
+  </servers>
+  <mirrors>
+    <mirror>
+      <mirrorOf>*</mirrorOf>
+      <name>default-libs-release</name>
+      <url>https://rajkm.jfrog.io/artifactory/default-libs-release</url>
+      <id>default-libs-release</id>
+    </mirror>
+  </mirrors>
+  <profiles>
+    <profile>
+      <repositories>
+        <repository>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>central</id>
+          <name>default-libs-release</name>
+          <url>https://rajkm.jfrog.io/artifactory/default-libs-release</url>
+        </repository>
+        <repository>
+          <snapshots />
+          <id>snapshots</id>
+          <name>default-libs-snapshot</name>
+          <url>https://rajkm.jfrog.io/artifactory/default-libs-snapshot</url>
+        </repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>central</id>
+          <name>default-libs-release</name>
+          <url>https://rajkm.jfrog.io/artifactory/default-libs-release</url>
+        </pluginRepository>
+        <pluginRepository>
+          <snapshots />
+          <id>snapshots</id>
+          <name>default-libs-snapshot</name>
+          <url>https://rajkm.jfrog.io/artifactory/default-libs-snapshot</url>
+        </pluginRepository>
+      </pluginRepositories>
+      <id>artifactory</id>
+    </profile>
+  </profiles>
+  <activeProfiles>
+    <activeProfile>artifactory</activeProfile>
+  </activeProfiles>
+
+
+
+
