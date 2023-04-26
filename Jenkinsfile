@@ -1,4 +1,9 @@
 node{
+    
+    stage('checkout') {
+ git branch: 'master',  url: 'https://github.com/krkumar14/simple-java-maven-app.git'   
+ }
+
 
 stage('build') {
     
