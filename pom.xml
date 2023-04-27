@@ -116,46 +116,7 @@
   </build>
   
  
-  <profiles>
-    <profile>
-      <repositories>
-        <repository>
-          <snapshots>
-            <enabled>false</enabled>
-          </snapshots>
-          <id>central</id>
-          <name>default-libs-release</name>
-          <url>https://rajkm.jfrog.io/artifactory/default-libs-release</url>
-        </repository>
-        <repository>
-          <snapshots />
-          <id>snapshots</id>
-          <name>default-libs-snapshot</name>
-          <url>https://rajkm.jfrog.io/artifactory/default-libs-snapshot</url>
-        </repository>
-      </repositories>
-      <pluginRepositories>
-        <pluginRepository>
-          <snapshots>
-            <enabled>false</enabled>
-          </snapshots>
-          <id>central</id>
-          <name>default-libs-release</name>
-          <url>https://rajkm.jfrog.io/artifactory/default-libs-release</url>
-        </pluginRepository>
-        <pluginRepository>
-          <snapshots />
-          <id>snapshots</id>
-          <name>default-libs-snapshot</name>
-          <url>https://rajkm.jfrog.io/artifactory/default-libs-snapshot</url>
-        </pluginRepository>
-      </pluginRepositories>
-      <id>artifactory</id>
-    </profile>
-  </profiles>
-  <activeProfiles>
-    <activeProfile>artifactory</activeProfile>
-  </activeProfiles>
+  
   
   <distributionManagement>
     <repository>
