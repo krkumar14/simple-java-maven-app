@@ -125,13 +125,13 @@ under the License.
     -->
 	<server>
 	<id>central</id>
-    <username>krkumar301411@gmail.com</name>
+    <username>krkumar301411@gmail.com</username>
 	<password>Druva@30</password>
 	</server>
 	
 	<server>
 	<id>snapshots</id>
-    <username>krkumar301411@gmail.com</name>
+    <username>krkumar301411@gmail.com</username>
 	<password>Druva@30</password>
 	</server>
     <!-- Another sample, using keys to authenticate.
