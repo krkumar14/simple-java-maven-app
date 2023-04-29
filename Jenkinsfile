@@ -10,6 +10,9 @@ stage('build') {
         println "build is running"
         
         sh "/opt/maven/bin/mvn -s settings.xml clean deploy"
+        sh "ls -la $HOME"
+        sh "mvn -v"
+        
     
 }
 }
